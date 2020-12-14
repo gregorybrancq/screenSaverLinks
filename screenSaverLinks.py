@@ -52,7 +52,7 @@ import xml.etree.ElementTree as ET
 from lxml import etree
 
 ## common
-sys.path.append('/home/greg/Greg/work/env/projects/pythonCommon')
+sys.path.append('/home/greg/Config/env/projects/pythonCommon')
 from basic import getHomeDir, getLogDir
 from message import MessageDialog
 
@@ -73,7 +73,7 @@ t = str(datetime.today().isoformat("_"))
 logFile = os.path.join(logDir, HEADER + "_" + t + ".log")
 lockFile = os.path.join(logDir, HEADER + ".lock")
 
-progIcon = os.path.join(homeDir, "Greg/work/config/icons/screensaverLink.png")
+progIcon = os.path.join(homeDir, "Config/tools/icons/screensaverLink.png")
 
 # Minimum parameters for each image to be installed
 minWidth = 800
@@ -82,13 +82,13 @@ minHeight = 800
 ## Official
 imagesDir = os.path.join(homeDir, "Images")
 linkDir = os.path.join(homeDir, "Screensaver")
-configDir = os.path.join(homeDir, "Greg/work/config/screensaverLink")
+configDir = os.path.join(homeDir, "Config/tools/screensaverLink")
 configName = "config.xml"
 
 ## Test
-# imagesDir = os.path.join(homeDir, "Greg/work/config/screensaverLink/Test")
+# imagesDir = os.path.join(homeDir, "Config/tools/screensaverLink/Test")
 # linkDir = os.path.join(homeDir, "Screensaver_test")
-# configDir = os.path.join(homeDir, "Greg/work/config/screensaverLink")
+# configDir = os.path.join(homeDir, "Config/tools/screensaverLink")
 # configName = "config_test.xml"
 
 configN = os.path.join(configDir, configName)
