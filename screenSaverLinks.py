@@ -52,7 +52,7 @@ import xml.etree.ElementTree as ET
 from lxml import etree
 
 ## common
-sys.path.append('/home/greg/Config/env/projects/pythonCommon')
+sys.path.append('/home/greg/Tools/env/projects/pythonCommon')
 from basic import getHomeDir, getLogDir
 from message import MessageDialog
 
