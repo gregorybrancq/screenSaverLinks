@@ -33,6 +33,7 @@ from gtk import RESPONSE_YES, RESPONSE_NO
 
 # default system
 import os, os.path
+import sys
 import re
 import shutil
 import copy
@@ -52,7 +53,7 @@ import xml.etree.ElementTree as ET
 from lxml import etree
 
 ## common
-sys.path.append('/home/greg/Tools/env/projects/pythonCommon')
+sys.path.append('/home/greg/Tools/env/pythonCommon')
 from basic import getHomeDir, getLogDir
 from message import MessageDialog
 
@@ -73,7 +74,7 @@ t = str(datetime.today().isoformat("_"))
 logFile = os.path.join(logDir, HEADER + "_" + t + ".log")
 lockFile = os.path.join(logDir, HEADER + ".lock")
 
-progIcon = os.path.join(homeDir, "Config/tools/icons/screensaverLink.png")
+progIcon = os.path.join(homeDir, "Tools/config/icons/screensaverLink.png")
 
 # Minimum parameters for each image to be installed
 minWidth = 800
@@ -82,7 +83,7 @@ minHeight = 800
 ## Official
 imagesDir = os.path.join(homeDir, "Images")
 linkDir = os.path.join(homeDir, "Screensaver")
-configDir = os.path.join(homeDir, "Config/tools/screensaverLink")
+configDir = os.path.join(homeDir, "Tools/config/screensaverLink")
 configName = "config.xml"
 
 ## Test
